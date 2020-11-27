@@ -1,5 +1,5 @@
 
-const getName = (randomName) => {
+const getName = (randomName) => { //syntax: getName(randomnumber) -> returns name
     let arr = [
         'saxeli',
         'saxeli',
@@ -15,7 +15,7 @@ const getName = (randomName) => {
     return arr[randomName];
 }
 
-const getMail = (name) => {
+const getMail = (name) => { // syntax: getMail(randomnumber) -> returns mail@mail.com
     let arr = [
         'maili',
         'maili',
@@ -31,7 +31,7 @@ const getMail = (name) => {
     return arr[name];
 }
 
-const emailSend = (mail,randomName) => {
+const emailSend = (mail,randomName) => { // syntax : emailSend("mimgebis maili", "random saxeli")
     Email.send({
         SecureToken : '5819ab7a-23cf-4a87-ad50-4f3d75a998ca',
         To : mail,
@@ -42,7 +42,7 @@ const emailSend = (mail,randomName) => {
         message => alert(message))
 }
 
-// syntax : emailSend("mimgebis maili", "random saxeli")
+
 
 
 
