@@ -6,10 +6,10 @@ const randomize = (names) => { // syntax: randomize([names]) -> returns  object.
         }
         // amorcheuls vshli arraydan ro sxvasac ar amouvides.
         names = names.filter((element) => element !== randomGuy)
-        let name = getName(i);
-        let email = getMail(name);
+        let email = getMail(i);
         let kid = getName(randomGuy);  // visac chuqnian
         emailSend(email,kid)
+        
         
     }
 }
@@ -58,7 +58,7 @@ const emailSend = (mail,randomName) => { // syntax : emailSend("mimgebis maili",
 }
 
 
-randomize([1,2,3,4,5,6,7,8,9,10]);
+randomize([0,1,2,3,4,5,6,7,8,9]);
 
 
 
