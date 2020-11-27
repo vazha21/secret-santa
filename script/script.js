@@ -1,5 +1,4 @@
 const randomize = (names) => { // syntax: randomize([names]) -> returns  object.
-    let obj = {};
     for (i of names) { 
         let randomGuy = names[Math.floor(Math.random() * names.length)];
         while (randomGuy === i) {
@@ -7,39 +6,42 @@ const randomize = (names) => { // syntax: randomize([names]) -> returns  object.
         }
         // amorcheuls vshli arraydan ro sxvasac ar amouvides.
         names = names.filter((element) => element !== randomGuy)
-        obj[i] = randomGuy;
+        let name = getName(i);
+        let email = getMail(name);
+        let kid = getName(randomGuy);  // visac chuqnian
+        emailSend(email,kid)
+        
     }
-    return obj
 }
 
 const getName = (randomName) => { //syntax: getName(randomnumber) -> returns name
     let arr = [
-        'saxeli',
-        'saxeli',
-        'saxeli',
-        'saxeli',
-        'saxeli',
-        'saxeli',
-        'saxeli',
-        'saxeli',
-        'saxeli',
-        'saxeli',
+        'vazha',
+        'rostika',
+        'gio',
+        'gvrito',
+        'luka',
+        'zura',
+        'koba',
+        'kote',
+        'koka',
+        'nika',
     ]
     return arr[randomName];
 }
 
 const getMail = (name) => { // syntax: getMail(randomnumber) -> returns mail@mail.com
     let arr = [
-        'maili',
-        'maili',
-        'maili',
-        'maili',
-        'maili',
-        'maili',
-        'maili',
-        'maili',
-        'maili',
-        'maili',
+        'vazha.abdushelishvili.1@btu.edu.ge',
+        'vazha.abdushelishvili.1@btu.edu.ge',
+        'vazha.abdushelishvili.1@btu.edu.ge',
+        'vazha.abdushelishvili.1@btu.edu.ge',
+        'vazha.abdushelishvili.1@btu.edu.ge',
+        'vazha.abdushelishvili.1@btu.edu.ge',
+        'vazha.abdushelishvili.1@btu.edu.ge',
+        'vazha.abdushelishvili.1@btu.edu.ge',
+        'vazha.abdushelishvili.1@btu.edu.ge',
+        'vazha.abdushelishvili.1@btu.edu.ge',
     ]
     return arr[name];
 }
@@ -56,6 +58,7 @@ const emailSend = (mail,randomName) => { // syntax : emailSend("mimgebis maili",
 }
 
 
+randomize([1,2,3,4,5,6,7,8,9,10]);
 
 
 
