@@ -1,7 +1,7 @@
 
 const getName = (randomName) => {
     let arr = [
-        'Giorgi',
+        'saxeli',
         'saxeli',
         'saxeli',
         'saxeli',
@@ -17,7 +17,7 @@ const getName = (randomName) => {
 
 const getMail = (name) => {
     let arr = [
-        'gvritagio@gmail.com',
+        'maili',
         'maili',
         'maili',
         'maili',
