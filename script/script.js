@@ -57,8 +57,17 @@ const emailSend = (mail,randomName) => { // syntax : emailSend("mimgebis maili",
         message => alert(message))
 }
 
+const arrayOf = (number) => {
+    let arr = [];
+    for (let i = 0; i<number; i++) {
+        arr[i] = i;
+    }
+    return arr;
+}
 
-randomize([0,1,2,3,4,5,6,7,8,9]);
+let arr = arrayOf(10);
+
+randomize(arr);
 
 
 
