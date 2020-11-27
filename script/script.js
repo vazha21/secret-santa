@@ -1,3 +1,16 @@
+const randomize = (names) => { // syntax: randomize([names]) -> returns  object.
+    let obj = {};
+    for (i of names) { 
+        let randomGuy = names[Math.floor(Math.random() * names.length)];
+        while (randomGuy === i) {
+            randomGuy = names[Math.floor(Math.random() * names.length)];
+        }
+        // amorcheuls vshli arraydan ro sxvasac ar amouvides.
+        names = names.filter((element) => element !== randomGuy)
+        obj[i] = randomGuy;
+    }
+    return obj
+}
 
 const getName = (randomName) => { //syntax: getName(randomnumber) -> returns name
     let arr = [
